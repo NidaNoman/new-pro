@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
 import React from 'react';
-import { ImGlass } from 'react-icons/im';
 
-const EditorsPick = () => {
+
+const EditorsPick = ()=> {
   return (
     <div className="bg-white py-10 px-5">
       <h2 className="text-center text-xl font-bold mb-2">EDITOR PICK</h2>
