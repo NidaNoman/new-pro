@@ -156,7 +156,7 @@ export default function About() {
       <section className="flex flex-col md:flex-row items-center justify-between bg-blue-500 text-white px-4 sm:px-12 lg:px-[195px] py-8 sm:py-12 lg:py-16 gap-8">
         <div className="md:w-1/2 text-center md:text-left">
           <h2 className="font-bold text-[28px] sm:text-[40px] mb-4">
-            Now Let's Grow Yours
+            Now Lets Grow Yours
           </h2>
           <p className="mb-6 text-[14px] sm:text-[16px]">
             The gradual accumulation of information about atomic and small-scale
