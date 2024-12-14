@@ -104,7 +104,7 @@ export default function Navbar() {
             Home
           </Link>
           <Link
-            href="/products"
+            href="/shop"
             className="text-gray-800 hover:text-blue-600 transition duration-300"
             onClick={() => setIsMenuOpen(false)}
           >
