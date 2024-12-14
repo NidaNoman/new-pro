@@ -7,7 +7,7 @@ export default function EditorsPick(){
   return (
     <section className="py-10 bg-white px-6 md:px-[195px]">
       <div className="text-center mb-8">
-        <h2 className="font-bold text-[#252B42] text-[24px] leading-[32px]">EDITOR'S PICK</h2>
+        <h2 className="font-bold text-[#252B42] text-[24px] leading-[32px]">EDITORS PICK</h2>
         <p className="text-sm text-[14px] leading-[20px] text-[#737373]">
           Problems trying to resolve the conflict between
         </p>

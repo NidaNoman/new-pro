@@ -114,7 +114,7 @@ export default function Pricing() {
 
                     <div className="text-center mt-12">
                         <p className="text-gray-500">
-                            Haven't got your answer? <span className="text-blue-500 cursor-pointer">Contact our support</span>
+                            Havent got your answer? <span className="text-blue-500 cursor-pointer">Contact our support</span>
                         </p>
                     </div>
                 </div>

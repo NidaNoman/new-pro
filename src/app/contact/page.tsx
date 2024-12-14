@@ -121,8 +121,8 @@ export default function Contact() {
 
         {/* "Let's Talk" Section */}
         <div className="text-center mt-8 space-y-4 pb-8">
-          <p className="text-gray-500">We can't wait to meet you</p>
-          <h3 className="text-3xl font-bold text-gray-800">Let's Talk</h3>
+          <p className="text-gray-500">We cant wait to meet you</p>
+          <h3 className="text-3xl font-bold text-gray-800">Lets Talk</h3>
           <button className="px-6 py-3 bg-blue-500 text-white font-medium rounded-full hover:bg-blue-600">
             Try it now
           </button>
