@@ -19,10 +19,10 @@ const NeuralUniverse = () => {
         <p className="text-gray-500 uppercase tracking-wide text-xs sm:text-sm lg:text-base mb-2">
           Summer 2020
         </p>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+        <h1 className="text-[40px] sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#252b42] mb-4 leading-[50px]">
           Part of the Neural Universe
         </h1>
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-6">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#737373] mb-6 text-[20px] leading-[30px]">
           We know how large objects will act, but things on a small scale.
         </p>
         <div className="flex justify-center md:justify-start space-x-4">

@@ -32,8 +32,8 @@ export default function Feature() {
   return (
     <div className="bg-gray-50 min-h-screen">
       <div className="max-w-6xl mx-auto px-4 py-8">
-        <h1 className="text-center text-4xl font-bold text-gray-800 mb-4">Featured Posts</h1>
-        <p className="text-center text-gray-500 mb-10">
+        <h1 className="text-center text-[40px] leading-[50px] font-bold text-[#252B42] mb-4">Featured Posts</h1>
+        <p className="text-center text-[#737373] mb-10 text-[14px] leading-[20px]">
           Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
         </p>
 

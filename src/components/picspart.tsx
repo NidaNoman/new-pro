@@ -1,129 +1,82 @@
-import Image from 'next/image';
-
-import React from 'react';
 
 
-const EditorsPick = ()=> {
+
+import Image from "next/image";
+
+export default function EditorsPick(){
   return (
-    <div className="bg-white py-10 px-5">
-      <h2 className="text-center text-xl font-bold mb-2">EDITOR PICK</h2>
-      <p className="text-center text-gray-500 mb-8">
-        Problems trying to resolve the conflict between
-      </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {/* First Item */}
+    <section className="py-10 bg-white px-6 md:px-[195px]">
+      <div className="text-center mb-8">
+        <h2 className="font-bold text-[#252B42] text-[24px] leading-[32px]">EDITOR'S PICK</h2>
+        <p className="text-sm text-[14px] leading-[20px] text-[#737373]">
+          Problems trying to resolve the conflict between
+        </p>
+      </div>
+
+      {/* Grid Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[22px] max-w-7xl mx-auto">
+        {/* MEN */}
         <div className="relative group">
           <Image
-            src="/boy-pic.jpg"
+            src="/shop1.jpg"
             alt="Men"
-            className="w-full h-auto rounded-md"
-            width={300}
-            height={300}
-         
+            layout="responsive"
+            width={500}
+            height={750}
+            className="object-cover"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity rounded-md flex items-center justify-center">
-            <span className="text-white font-bold text-lg">MEN</span>
-          </div>
-          {/* Second Image */}
-          <div className="relative mt-4">
-            <Image
-              src="/picture.jpg"
-              alt="Men Alternate"
-              className="w-full h-auto rounded-md"
-              width={200}
-              height={500}
-           
-        
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity rounded-md flex items-center justify-center">
-              <span className="text-white font-bold text-lg">MEN </span>
-            </div>
+          <div className="absolute bottom-4 left-4">
+            <span className="bg-white text-gray-800 px-4 py-2 font-bold">MEN</span>
           </div>
         </div>
 
-        {/* Second Item */}
+        {/* WOMEN */}
         <div className="relative group">
           <Image
-            src="/girl-pic.jpg"
+            src="/shop2.jpg"
             alt="Women"
-            className="w-full h-auto rounded-md"
-            width={300}
-            height={300}
+            layout="responsive"
+            width={500}
+            height={750}
+            className="object-cover"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity rounded-md flex items-center justify-center">
-            <span className="text-white font-bold text-lg">WOMEN</span>
-          </div>
-          {/* Second Image */}
-          <div className="relative mt-4">
-            <Image
-              src="/pic6.png"
-              alt="Women Alternate"
-              className="w-full h-auto rounded-md"
-              width={300}
-              height={300}
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity rounded-md flex items-center justify-center">
-              <span className="text-white font-bold text-lg">WOMEN </span>
-            </div>
+          <div className="absolute bottom-4 left-4">
+            <span className="bg-white text-gray-800 px-4 py-2 font-bold">WOMEN</span>
           </div>
         </div>
 
-        {/* Third Item */}
+        {/* ACCESSORIES */}
         <div className="relative group">
           <Image
-            src="/pic4.png"
+            src="/shop4.png"
             alt="Accessories"
-            className="w-full h-auto rounded-md"
-            width={300}
-            height={300}
+            layout="responsive"
+            width={250}
+            height={350}
+            className="object-cover"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity rounded-md flex items-center justify-center">
-            <span className="text-white font-bold text-lg">ACCESSORIES</span>
-          </div>
-          {/* Second Image */}
-          <div className="relative mt-4">
-            <Image
-              src="/pic-pic.jpg"
-              alt="Accessories Alternate"
-              className="w-full h-auto rounded-md"
-              width={300}
-              height={300}
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity rounded-md flex items-center justify-center">
-              <span className="text-white font-bold text-lg">ACCESSORIES </span>
-            </div>
+          <div className="absolute bottom-4 left-4">
+            <span className="bg-white text-gray-800 px-4 py-2 font-bold">ACCESSORIES</span>
           </div>
         </div>
 
-        {/* Fourth Item */}
+        {/* KIDS */}
         <div className="relative group">
           <Image
-            src="/pic2.jpg"
+            src="/edit.jpg"
             alt="Kids"
-            className="w-full h-auto rounded-md"
-            width={300}
-            height={300}
+            layout="responsive"
+            width={250}
+            height={350}
+            className="object-cover"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity rounded-md flex items-center justify-center">
-            <span className="text-white font-bold text-lg">KIDS</span>
-          </div>
-          {/* Second Image */}
-          <div className="relative mt-4">
-            <Image
-              src="/pic8.jpg"
-              alt="Kids Alternate"
-              className="w-full h-auto rounded-md"
-              width={300}
-              height={300}
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity rounded-md flex items-center justify-center">
-              <span className="text-white font-bold text-lg">KIDS </span>
-            </div>
+          <div className="absolute bottom-4 left-4">
+            <span className="bg-white text-gray-800 px-4 py-2 font-bold">KIDS</span>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default EditorsPick;
+

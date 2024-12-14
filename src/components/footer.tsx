@@ -1,104 +1,107 @@
 
+import Link from 'next/link';
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
-import React from "react";
-
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-gray-50 text-gray-700">
-      <div className="container mx-auto px-6 py-10">
+    <footer className="bg-gray-50 py-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Section */}
-        <div className="flex flex-wrap justify-between items-start space-y-6 md:space-y-0">
-          {/* Logo and Social Icons */}
-          <div className="w-full sm:w-1/3 md:w-1/4">
-            <h2 className="text-2xl font-bold text-gray-800">Bandage</h2>
-            <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-blue-500 hover:text-blue-600">
-                <i className="fab fa-facebook"></i>
-              </a>
-              <a href="#" className="text-blue-400 hover:text-blue-500">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="text-pink-500 hover:text-pink-600">
-                <i className="fab fa-instagram"></i>
-              </a>
-            </div>
+        <div className="flex flex-col md:flex-row justify-between items-center border-b pb-8 mb-8">
+          {/* Brand and Social Links */}
+          <div className="text-center md:text-left">
+            <h2 className="text-[24px] leading-[32px] font-bold text-[#252B42]">Bandage</h2>
+          </div>
+          <div className="flex space-x-4 mt-4 md:mt-0">
+            <Link href="#">
+              <span className="text-blue-500 hover:text-blue-700 text-xl">
+                <FaFacebook />
+              </span>
+            </Link>
+            <Link href="#">
+              <span className="text-blue-500 hover:text-blue-700 text-xl">
+                <FaInstagram />
+              </span>
+            </Link>
+            <Link href="#">
+              <span className="text-blue-500 hover:text-blue-700 text-xl">
+                <FaTwitter />
+              </span>
+            </Link>
+          </div>
+        </div>
+
+        {/* Links Section */}
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-6 text-gray-600">
+          {/* Column 1 */}
+          <div>
+            <h3 className="font-bold mb-4  text-[#252B42]  text-[16px] leading-[24px]">Company Info</h3>
+            <ul className="space-y-2">
+              <li><Link href="#"><span className="hover:text-gray-800">About Us</span></Link></li>
+              <li><Link href="#"><span className="hover:text-gray-800">Carrier</span></Link></li>
+              <li><Link href="#"><span className="hover:text-gray-800">We are hiring</span></Link></li>
+              <li><Link href="#"><span className="hover:text-gray-800">Blog</span></Link></li>
+            </ul>
           </div>
 
-          {/* Links Section */}
-          <div className="w-full sm:w-2/3 md:w-3/4 flex flex-wrap justify-between space-y-6 sm:space-y-0">
-            {/* Column 1 */}
-            <div className="w-full sm:w-1/2 lg:w-1/4">
-              <h3 className="font-semibold text-gray-800">Company Info</h3>
-              <ul className="mt-4 space-y-2">
-                <li><a href="#" className="hover:text-blue-500">About Us</a></li>
-                <li><a href="#" className="hover:text-blue-500">Carrier</a></li>
-                <li><a href="#" className="hover:text-blue-500">We are hiring</a></li>
-                <li><a href="#" className="hover:text-blue-500">Blog</a></li>
-              </ul>
-            </div>
-            {/* Column 2 */}
-            <div className="w-full sm:w-1/2 lg:w-1/4">
-              <h3 className="font-semibold text-gray-800">Legal</h3>
-              <ul className="mt-4 space-y-2">
-                <li><a href="#" className="hover:text-blue-500">About Us</a></li>
-                <li><a href="#" className="hover:text-blue-500">Carrier</a></li>
-                <li><a href="#" className="hover:text-blue-500">We are hiring</a></li>
-                <li><a href="#" className="hover:text-blue-500">Blog</a></li>
-              </ul>
-            </div>
-            {/* Column 3 */}
-            <div className="w-full sm:w-1/2 lg:w-1/4">
-              <h3 className="font-semibold text-gray-800">Features</h3>
-              <ul className="mt-4 space-y-2">
-                <li><a href="#" className="hover:text-blue-500">Business Marketing</a></li>
-                <li><a href="#" className="hover:text-blue-500">User Analytics</a></li>
-                <li><a href="#" className="hover:text-blue-500">Live Chat</a></li>
-                <li><a href="#" className="hover:text-blue-500">Unlimited Support</a></li>
-              </ul>
-            </div>
-            {/* Column 4 */}
-            <div className="w-full sm:w-1/2 lg:w-1/4">
-              <h3 className="font-semibold text-gray-800">Resources</h3>
-              <ul className="mt-4 space-y-2">
-                <li><a href="#" className="hover:text-blue-500">iOS & Android</a></li>
-                <li><a href="#" className="hover:text-blue-500">Watch a Demo</a></li>
-                <li><a href="#" className="hover:text-blue-500">Customers</a></li>
-                <li><a href="#" className="hover:text-blue-500">API</a></li>
-              </ul>
-            </div>
+          {/* Column 2 */}
+          <div>
+            <h3 className="font-bold  mb-4   text-[#252B42]  text-[16px] leading-[24px]">Legal</h3>
+            <ul className="space-y-2">
+              <li><Link href="#"><span className="hover:text-gray-800">About Us</span></Link></li>
+              <li><Link href="#"><span className="hover:text-gray-800">Carrier</span></Link></li>
+              <li><Link href="#"><span className="hover:text-gray-800">We are hiring</span></Link></li>
+              <li><Link href="#"><span className="hover:text-gray-800">Blog</span></Link></li>
+            </ul>
           </div>
 
-          {/* Newsletter Section */}
-          <div className="w-full sm:w-1/3 mt-6 sm:mt-0">
-            <h3 className="font-semibold text-gray-800">Get In Touch</h3>
-            <form className="mt-4">
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="p-2 w-full border border-gray-300 rounded-l-md focus:outline-none focus:ring focus:ring-blue-300"
-                />
-                <button
-                  type="submit"
-                  className="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600"
-                >
-                  Subscribe
-                </button>
-              </div>
-              <p className="mt-2 text-sm text-gray-500">
-                Lore imp sum dolor Amit.
-              </p>
+          {/* Column 3 */}
+          <div>
+            <h3 className="font-bold  text-[#252B42]  text-[16px] leading-[24px] mb-4">Features</h3>
+            <ul className="space-y-2">
+              <li><Link href="#"><span className="hover:text-gray-800">Business Marketing</span></Link></li>
+              <li><Link href="#"><span className="hover:text-gray-800">User Analytic</span></Link></li>
+              <li><Link href="#"><span className="hover:text-gray-800">Live Chat</span></Link></li>
+              <li><Link href="#"><span className="hover:text-gray-800">Unlimited Support</span></Link></li>
+            </ul>
+          </div>
+
+          {/* Column 4 */}
+          <div>
+            <h3 className="font-bold  text-[#252B42]  text-[16px] leading-[24px] mb-4">Resources</h3>
+            <ul className="space-y-2">
+              <li><Link href="#"><span className="hover:text-gray-800">iOS & Android</span></Link></li>
+              <li><Link href="#"><span className="hover:text-gray-800">Watch a Demo</span></Link></li>
+              <li><Link href="#"><span className="hover:text-gray-800">Customers</span></Link></li>
+              <li><Link href="#"><span className="hover:text-gray-800">API</span></Link></li>
+            </ul>
+          </div>
+
+          {/* Column 5 */}
+          <div>
+            <h3 className="font-bold  text-[#252B42]  text-[16px] leading-[24px] mb-4">Get In Touch</h3>
+            <form className="space-y-4">
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+              <button
+                type="submit"
+                className="w-full px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600"
+              >
+                Subscribe
+              </button>
             </form>
+            <p className="text-sm text-gray-500 mt-4">Lorem ipsum dolor amet</p>
           </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-10 border-t pt-4 text-center text-sm text-gray-500">
-          Made With Love By Finland All Right Reserved
+        <div className="mt-8 text-center text-gray-500 text-sm">
+          Made With Love By Finland All Rights Reserved
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
