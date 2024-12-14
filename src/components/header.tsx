@@ -54,7 +54,7 @@ export default function Header() {
             <li><Link href="/" className="hover:underline">Home</Link></li>
             <li><Link href="/shop" className="hover:underline">Shop</Link></li>
             <li><Link href="/about" className="hover:underline">About</Link></li>
-            <li><Link href="/blog" className="hover:underline">Blog</Link></li>
+            <li><Link href="/blogs" className="hover:underline">Blog</Link></li>
             <li><Link href="/contact" className="hover:underline">Contact</Link></li>
             <li><Link href="/pages" className="hover:underline">Pages</Link></li>
           </ul>
