@@ -13,7 +13,7 @@ export default function Shop() {
     <div>
       <Nas />
       {/* Shop Banner Section */}
-      <section className="h-[92px] pt-[24px] bg-[#FAFAFA]">
+      {/* <section className="h-[92px] pt-[24px] bg-[#FAFAFA]">
         <div className="max-w-screen-xl mx-auto px-4 sm:px-8 lg:px-16 flex items-center justify-between">
           <h1 className="text-xl sm:text-2xl font-bold text-[#252B42] leading-[32px]">
             Shop
@@ -25,7 +25,36 @@ export default function Shop() {
             <span className="mx-2">&gt;</span> <span>Shop</span>
           </nav>
         </div>
-      </section>
+      </section> */}
+
+<section className="h-[92px] pt-[24px] bg-[#FAFAFA]">
+  <div className="max-w-screen-xl mx-auto px-4 sm:px-8 lg:px-16 flex items-center justify-between">
+    <h1 className="text-xl sm:text-2xl font-bold text-[#252B42] leading-[32px]">
+      Shop
+    </h1>
+    <nav className="text-sm text-gray-600">
+      <a href="#" className="hover:text-green-700 text-[#252B42]">
+        Home
+      </a>
+      <span className="mx-2">&gt;</span> 
+      <a href="/shopss" className="text-[#252B42] hover:text-green-700">Shop</a>
+    </nav>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       {/* Shop Section */}
       <main className="max-w-screen-xl mx-auto bg-[#FAFAFA] px-4 sm:px-8 lg:px-16 pb-8">
