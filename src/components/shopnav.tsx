@@ -1,3 +1,4 @@
+"use client"
 import { 
   FacebookIcon, Search, ShoppingCart, Heart, Phone, Mail, Instagram, Youtube, Facebook, Twitter, Menu, X
 } from 'lucide-react';
